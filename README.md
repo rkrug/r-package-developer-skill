@@ -68,6 +68,6 @@ For scaffold requests, the result should be a usable package baseline, typically
   	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/checklist.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/checklist.md</a>
   	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/commit-template.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/commit-template.md</a>
   	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/skill-design-standard.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/skill-design-standard.md</a>
-  	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/check-ai-docs-template.sh.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/check-ai-docs-template.sh</a>
+  	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/check-ai-docs-template.sh" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/check-ai-docs-template.sh</a>
   - Scripts
-  	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/scripts/sync-from-github.sh.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/scripts/sync-from-github.sh</a>
+  	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/scripts/sync-from-github.sh" target="_blank" rel="noopener noreferrer">skills/r-package-developer/scripts/sync-from-github.sh</a>
