@@ -19,16 +19,16 @@ Use this structure:
 
 ## How To Use
 
-To get all files from the GitHub repository `r-package-development`:
+To get all files from the GitHub repository `r-package-developer-skill`:
 
 ```bash
 # Option 1: download ZIP archive
-curl -L -o r-package-development.zip https://github.com/<org-or-user>/r-package-development/archive/refs/heads/main.zip
-unzip r-package-development.zip
+curl -L -o r-package-developer-skill.zip https://github.com/<org-or-user>/r-package-developer-skill/archive/refs/heads/main.zip
+unzip r-package-developer-skill.zip
 
 # Option 2: download tar.gz archive
-curl -L -o r-package-development.tar.gz https://github.com/<org-or-user>/r-package-development/archive/refs/heads/main.tar.gz
-tar -xzf r-package-development.tar.gz
+curl -L -o r-package-developer-skill.tar.gz https://github.com/<org-or-user>/r-package-developer-skill/archive/refs/heads/main.tar.gz
+tar -xzf r-package-developer-skill.tar.gz
 ```
 
 1. Put the skill under `skills/r-package-developer/` in your target repository.
@@ -62,12 +62,12 @@ For scaffold requests, the result should be a usable package baseline, typically
 
 ## Skill File Index
 
-- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/SKILL.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/SKILL.md</a>
+- <a href="https://rkrug.github.io/r-package-developer-skill/skills/r-package-developer/SKILL.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/SKILL.md</a>
   - References
-  	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/branch-protection-baseline.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/branch-protection-baseline.md</a>
-  	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/checklist.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/checklist.md</a>
-  	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/commit-template.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/commit-template.md</a>
-  	- <a href="https://rkrug.github.io/r-package-maintainer-skill/skills/r-package-developer/references/skill-design-standard.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/skill-design-standard.md</a>
-  	- <a href="https://github.com/rkrug/r-package-maintainer-skill/blob/main/skills/r-package-developer/references/check-ai-docs-template.sh" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/check-ai-docs-template.sh</a>
+  	- <a href="https://rkrug.github.io/r-package-developer-skill/skills/r-package-developer/references/branch-protection-baseline.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/branch-protection-baseline.md</a>
+  	- <a href="https://rkrug.github.io/r-package-developer-skill/skills/r-package-developer/references/checklist.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/checklist.md</a>
+  	- <a href="https://rkrug.github.io/r-package-developer-skill/skills/r-package-developer/references/commit-template.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/commit-template.md</a>
+  	- <a href="https://rkrug.github.io/r-package-developer-skill/skills/r-package-developer/references/skill-design-standard.html" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/skill-design-standard.md</a>
+  	- <a href="https://github.com/rkrug/r-package-developer-skill/blob/main/skills/r-package-developer/references/check-ai-docs-template.sh" target="_blank" rel="noopener noreferrer">skills/r-package-developer/references/check-ai-docs-template.sh</a>
   - Scripts
-  	- <a href="https://github.com/rkrug/r-package-maintainer-skill/blob/main/skills/r-package-developer/scripts/sync-from-github.sh" target="_blank" rel="noopener noreferrer">skills/r-package-developer/scripts/sync-from-github.sh</a>
+  	- <a href="https://github.com/rkrug/r-package-developer-skill/blob/main/skills/r-package-developer/scripts/sync-from-github.sh" target="_blank" rel="noopener noreferrer">skills/r-package-developer/scripts/sync-from-github.sh</a>
