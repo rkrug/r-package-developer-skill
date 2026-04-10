@@ -5,27 +5,27 @@ set -euo pipefail
 # No local intermediate canonical folder required.
 #
 # Usage:
-#   bash inst/skills/r-package-developer/scripts/sync-from-github.sh
+#   bash skills/r-package-developer/scripts/sync-from-github.sh
 #
 # Optional configuration:
 #   RPKG_SKILL_GH_REPO="owner/repo"                  (default: rkrug/r-package-developer-skill)
 #   RPKG_SKILL_GH_REF="main"                         (default: main)
-#   RPKG_SKILL_GH_PATH="inst/skills/r-package-developer" (default shown)
+#   RPKG_SKILL_GH_PATH="skills/r-package-developer"  (default shown)
 #
 # Example:
 #   RPKG_SKILL_GH_REPO="org/r-package-developer-skill" \
 #   RPKG_SKILL_GH_REF="v0.1.2" \
-#   bash inst/skills/r-package-developer/scripts/sync-from-github.sh
+#   bash skills/r-package-developer/scripts/sync-from-github.sh
 
 show_help() {
   cat <<'EOF'
 sync-from-github.sh
 -------------------
-Syncs inst/skills/r-package-developer from a GitHub repository/archive.
+Syncs skills/r-package-developer from a GitHub repository/archive.
 
 Usage:
-  bash inst/skills/r-package-developer/scripts/sync-from-github.sh
-  bash inst/skills/r-package-developer/scripts/sync-from-github.sh --help
+  bash skills/r-package-developer/scripts/sync-from-github.sh
+  bash skills/r-package-developer/scripts/sync-from-github.sh --help
 
 Environment variables:
   RPKG_SKILL_GH_REPO   GitHub repo in owner/name format
@@ -33,14 +33,14 @@ Environment variables:
   RPKG_SKILL_GH_REF    Branch, tag, or commit ref to download
                        default: main
   RPKG_SKILL_GH_PATH   Path in the source repo containing SKILL.md + references/
-                       default: inst/skills/r-package-developer
+                       default: skills/r-package-developer
 
 Examples:
-  bash inst/skills/r-package-developer/scripts/sync-from-github.sh
+  bash skills/r-package-developer/scripts/sync-from-github.sh
 
   RPKG_SKILL_GH_REPO="org/r-package-developer-skill" \
   RPKG_SKILL_GH_REF="v0.1.2" \
-  bash inst/skills/r-package-developer/scripts/sync-from-github.sh
+  bash skills/r-package-developer/scripts/sync-from-github.sh
 
 Exit codes:
   0  success
@@ -54,11 +54,11 @@ if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
 fi
 
 repo_root="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
-target_dir="${repo_root}/inst/skills/r-package-developer"
+target_dir="${repo_root}/skills/r-package-developer"
 
 gh_repo="${RPKG_SKILL_GH_REPO:-rkrug/r-package-developer-skill}"
 gh_ref="${RPKG_SKILL_GH_REF:-main}"
-gh_path="${RPKG_SKILL_GH_PATH:-inst/skills/r-package-developer}"
+gh_path="${RPKG_SKILL_GH_PATH:-skills/r-package-developer}"
 
 archive_url="https://codeload.github.com/${gh_repo}/tar.gz/${gh_ref}"
 tmp_dir="$(mktemp -d)"
