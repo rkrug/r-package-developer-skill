@@ -19,16 +19,10 @@ Use this structure:
 
 ## How To Use
 
-To get all files from the GitHub repository `r-package-developer-skill`:
+Install/update directly from `r-package-developer-skill`:
 
 ```bash
-# Option 1: download ZIP archive
-curl -L -o r-package-developer-skill.zip https://github.com/<org-or-user>/r-package-developer-skill/archive/refs/heads/main.zip
-unzip r-package-developer-skill.zip
-
-# Option 2: download tar.gz archive
-curl -L -o r-package-developer-skill.tar.gz https://github.com/<org-or-user>/r-package-developer-skill/archive/refs/heads/main.tar.gz
-tar -xzf r-package-developer-skill.tar.gz
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/rkrug/r-package-developer-skill/main/skills/r-package-developer/scripts/sync-from-github.sh)"
 ```
 
 1. Put the skill under `skills/r-package-developer/` in your target repository.
