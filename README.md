@@ -19,6 +19,18 @@ Use this structure:
 
 ## How To Use
 
+To get all files from the GitHub repository `r-package-development`:
+
+```bash
+# Option 1: download ZIP archive
+curl -L -o r-package-development.zip https://github.com/<org-or-user>/r-package-development/archive/refs/heads/main.zip
+unzip r-package-development.zip
+
+# Option 2: download tar.gz archive
+curl -L -o r-package-development.tar.gz https://github.com/<org-or-user>/r-package-development/archive/refs/heads/main.tar.gz
+tar -xzf r-package-development.tar.gz
+```
+
 1. Put the skill under `skills/r-package-developer/` in your target repository.
 2. Ask your coding agent to read and follow `skills/r-package-developer/SKILL.md`.
 3. Request the concrete task (for example, create a package skeleton, implement a feature, or run a release sync).
