@@ -21,6 +21,8 @@ Use this structure:
 
 Install/update directly from `r-package-developer-skill`:
 
+Run this from the root directory of your R package repository:
+
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/rkrug/r-package-developer-skill/main/skills/r-package-developer/scripts/sync-from-github.sh)"
 ```
