@@ -40,7 +40,8 @@ use them consistently without bloating user-facing docs.
 1. Separate user workflow skills from maintainer/internal skills.
 2. Keep naming clear and intention-revealing (for example `user-*`,
    `maintainer-*`).
-3. Maintain an index file with selection rules.
+3. When the package has more than one skill, maintain a `SKILLS.md` index file
+   at the repo root with selection rules for each skill.
 
 ## Sync Rules (Required)
 

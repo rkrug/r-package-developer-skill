@@ -67,8 +67,8 @@ trap 'rm -rf "${tmp_dir}"' EXIT
 echo "[skill-sync] Downloading ${archive_url}"
 curl -fsSL "${archive_url}" -o "${tmp_dir}/source.tar.gz"
 
-tar -xzf "${tmp_dir}/source.tar.gz" -C "${tmp_dir}"
 root_dir="$(tar -tzf "${tmp_dir}/source.tar.gz" | head -n1 | cut -d/ -f1)"
+tar -xzf "${tmp_dir}/source.tar.gz" -C "${tmp_dir}"
 source_dir="${tmp_dir}/${root_dir}/${gh_path}"
 
 if [[ ! -f "${source_dir}/SKILL.md" || ! -d "${source_dir}/references" ]]; then

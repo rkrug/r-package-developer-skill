@@ -55,24 +55,23 @@ Use `references/checklist.md` as the execution gate before commit/merge.
   `llms-full.txt`, contracts/quick-index pages, skills).
 - If code/API/output contracts change, update impacted AI-readable artifacts in
   the same change set.
-- For skills in pkgdown, render HTML from include-based vignette wrappers that
+- (If using pkgdown) Render HTML from include-based vignette wrappers that
   include `inst/skills/*/SKILL.md` and `inst/skills/*/references/*.md`;
   do not duplicate skill/reference text in vignettes.
-- Keep one wrapper page per skill (not per reference file). Embed references
-  inside the skill wrapper page under a references section.
-- Keep navbar compact: one menu item per skill only.
-- Keep `_pkgdown.yml` articles index synchronized with the actual skill wrapper
-  vignette files.
-- Remove obsolete skill-reference wrapper files when moving to single-page
-  wrappers.
+- (If using pkgdown) Keep one wrapper page per skill (not per reference file).
+  Embed references inside the skill wrapper page under a references section.
+- (If using pkgdown) Keep navbar compact: one menu item per skill only.
+- (If using pkgdown) Keep `_pkgdown.yml` articles index synchronized with the
+  actual skill wrapper vignette files.
+- (If using pkgdown) Remove obsolete skill-reference wrapper files when moving
+  to single-page wrappers.
 
 ## Baseline CI Requirement
 
 - Ensure baseline check workflow exists via
   `usethis::use_github_action("check-standard")`.
 - As part of release/audit validation, run a local package check using
-  `devtools::check()` (preferred in interactive development environments) and
-  record outcomes.
+  `devtools::check()` and record outcomes.
 
 ## Package Skill Design Standard
 
@@ -99,5 +98,6 @@ Read and apply:
 - `references/checklist.md`
 - `references/branch-protection-baseline.md`
 - `references/commit-template.md`
-- `references/check-ai-docs-template.sh`
 - `references/skill-design-standard.md`
+- `references/agent-r-guidance.md`
+- `scripts/check-ai-docs-template.sh` (copy to `scripts/check-ai-docs.sh` in target package)
